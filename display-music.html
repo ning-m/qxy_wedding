@@ -99,23 +99,14 @@ border-color:#FFF rgb(100,100,100) #FFF #FFF;
                </div>
             </div>
             <!-- Title, Breadcrumb End-->
-         	<div id="musicCommentInfo" style="width:430px;height:675px;padding-top:100px;padding-left:50px;padding-right:20px;overflow:auto; float:right;background-image:url('img/comment_background.png')">
-				<h1 style="color:rgb(100,100,100);text-align:center;">暂无评论</h1>
-
-			</div>
-			<input id="MediaID" style="visibility:hidden" value=""/>
-			<div style="padding-top:100px;padding-left:50px;padding-right:20px;position:absolute;top:670px;right:20px;">
-				<span style="color:rgb(150,150,150)">｡◕ ◡ ◕｡评论一下吧~</span>
-				<input type="text" id="subComment" value="" style="width:200px"/>
-				<input type="button" onclick="submitComment('music')" value="发送"/>
-			</div>
+         
 <!--效果html开始-->
-<div class="myplayer" style="background-image:url('img/music_background.png')">
+<div class="myplayer" style="margin:0 auto 0 auto;background-image:url('img/music_background.png')">
 <div id="t_wrapper">
   <div id="t_cover"> <img src="images/music/logo.png"> </div>
   <div id="t_top">
     <div id="t_title_info"> <span class="artist"></span> <span class="title"></span> </div>
-    	<span class=" icon-download-alt" style="float:right;top:-20px;"><a href="" id="downloadLink" target="_blank" >下载</a></span>
+  
   </div>
   <div id="t_middle">
     <div id="play"></div>
@@ -123,7 +114,7 @@ border-color:#FFF rgb(100,100,100) #FFF #FFF;
     <div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="t_progress">
       <div id="trackInfo">
         <div id="error"> </div>
-        <div id="timeCurrent">0:00</div>
+        <div id="current">0:00</div>
         <div id="duration">0:00</div>
       </div>
       <div style="width: 0%;" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
@@ -139,12 +130,131 @@ border-color:#FFF rgb(100,100,100) #FFF #FFF;
   </div>
 </div>
 <div id="playlist">
-	
-  <ul id="MUSIC_playList">
+  <ul>
+    <li t_cover="music/musicDefaultCover.png" t_artist="解发权" t_name="K歌之王"> <a href="#">K歌之王</a>
+      <audio preload="none">
+        <source src="Media/music/K歌之王.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover1.png" t_artist="解发权" t_name="爱的就是你"> <a href="#">爱的就是你</a>
+      <audio preload="none">
+        <source src="Media/music/爱的就是你.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover2.png" t_artist="解发权" t_name="当你老了"> <a href="#">当你老了</a>
+      <audio preload="none">
+        <source src="Media/music/当你老了.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover3.png" t_artist="解发权" t_name="风度"> <a href="#">风度</a>
+      <audio preload="none">
+        <source src="Media/music/风度.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover4.png" t_artist="解发权" t_name="红颜旧"> <a href="#">红颜旧</a>
+      <audio preload="none">
+        <source src="Media/music/红颜旧.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover5.png" t_artist="解发权" t_name="就是我"> <a href="#">就是我</a>
+      <audio preload="none">
+        <source src="Media/music/就是我.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover6.png" t_artist="解发权" t_name="看月亮爬上来"> <a href="#">看月亮爬上来</a>
+      <audio preload="none">
+        <source src="Media/music/看月亮爬上来.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover7.png" t_artist="解发权" t_name="空白格"> <a href="#">空白格</a>
+      <audio preload="none">
+        <source src="Media/music/空白格.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover8.png" t_artist="解发权" t_name="兰亭序"> <a href="#">兰亭序</a>
+      <audio preload="none">
+        <source src="Media/music/兰亭序.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover9.png" t_artist="解发权" t_name="流沙"> <a href="#">流沙</a>
+      <audio preload="none">
+        <source src="Media/music/流沙.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicDefaultCover.png" t_artist="解发权" t_name="庐州月"> <a href="#">庐州月</a>
+      <audio preload="none">
+        <source src="Media/music/庐州月.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover1.png" t_artist="解发权" t_name="魔术先生"> <a href="#">魔术先生</a>
+      <audio preload="none">
+        <source src="Media/music/魔术先生.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover2.png" t_artist="解发权" t_name="陪你度过漫长岁月"> <a href="#">陪你度过漫长岁月</a>
+      <audio preload="none">
+        <source src="Media/music/陪你度过漫长岁月.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover3.png" t_artist="解发权" t_name="普通朋友"> <a href="#">普通朋友</a>
+      <audio preload="none">
+        <source src="Media/music/普通朋友.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover4.png" t_artist="解发权" t_name="其实我也不知道"> <a href="#">其实我也不知道</a>
+      <audio preload="none">
+        <source src="Media/music/其实我也不知道.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover5.png" t_artist="解发权" t_name="青城山下白素贞"> <a href="#">青城山下白素贞</a>
+      <audio preload="none">
+        <source src="Media/music/青城山下白素贞.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover6.png" t_artist="解发权" t_name="王妃"> <a href="#">王妃</a>
+      <audio preload="none">
+        <source src="Media/music/王妃.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover7.png" t_artist="解发权" t_name="演员"> <a href="#">演员</a>
+      <audio preload="none">
+        <source src="Media/music/演员.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    <li t_cover="music/musicCover8.png" t_artist="解发权" t_name="一次就好"> <a href="#">一次就好</a>
+      <audio preload="none">
+        <source src="Media/music/一次就好.mp3" type="audio/mp3">
+        <source src="http://www.internetke.com" type="audio/ogg; codecs=vorbis">
+      </audio>
+    </li>
+    
   </ul>
+
+
 </div>
 </div>
-<!--效果html结束-->
+
+
+
+
 </div>
 
 	<!-- Footer Start -->
@@ -159,12 +269,8 @@ border-color:#FFF rgb(100,100,100) #FFF #FFF;
 		<script src="js/jquery-ui.js"></script>
 		<script src="js/tPlayer.js"></script>
 		
-		<script src="js/music.js"></script>
 		
       <script src="js/comment.js"></script>
-      <script src="js/login.js"></script>
-      <script src="js/register.js"></script>
-      <script src="js/submitComment.js"></script>
 		
       
       <script src="js/bootstrap.js"></script>

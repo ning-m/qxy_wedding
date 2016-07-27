@@ -28,28 +28,6 @@
      <link href="css/switcher.css" rel="stylesheet">
      <link href="css/spectrum.css" rel="stylesheet">
 
-		<!--  圆角矩形  -->
-		<style type="text/css">
-.send {
-	position: relative;
-	width: 150px;
-	padding: 5px 5px;
-	background: rgb(100, 100, 100);
-	color: rgb(255, 255, 255);
-	border-radius: 5px; /* 圆角 */
-	margin: -50px auto 0 100px;
-}
-
-.send .arrow {
-	position: absolute;
-	top: 5px;
-	right: 150px; /* 圆角的位置需要细心调试哦 */
-	width: 0;
-	height: 0;
-	font-size: 0;
-	border: solid 8px;
-	border-color: #FFF rgb(100, 100, 100) #FFF #FFF;
-}
 </style>
 
 		<!-- 图标 -->
@@ -105,16 +83,10 @@
          		<h1 id="videoName">视频名</h1>
          		<p >发布人：<span id="videoAuthor"></span></p>
          		<p >发布时间：<span id="videoTime"></span></p>
-         		<span><span class="icon-download-alt"></span><a href="" id="downloadLink" target="_blank" onclick="downloadIncrease('video')">下载</a></span>
          	</div> 
          	<div id="videoCommentInfo" style="width:430px;height:675px;padding-top:100px;padding-left:50px;padding-right:20px;overflow:auto; float:right;background-image:url('img/comment_background.png')">
 				<h1 style="color:rgb(100,100,100);text-align:center;">暂无评论</h1>
 
-			</div>
-			<div style="padding-top:100px;padding-left:50px;padding-right:20px;position:absolute;top:835px;right:20px;">
-				<span style="color:rgb(250,250,250)">｡◕ ◡ ◕｡评论一下吧~</span>
-				<input type="text" id="subComment" value="" style="width:200px"/>
-				<input type="button" onclick="submitComment('video')" value="发送"/>
 			</div>
          	<div class="demo" style="text-align:center;background-color:rgb(0,0,0)">
          		<video id="videoVIDEO" class="video" poster="" width="800px" height="700px" controls preload >
@@ -130,17 +102,15 @@
       <!-- Wrap End -->
      
       <!-- The Scripts -->
+
+      <script type="text/javascript" src="js/html5media.min.js"></script>
+
       <script src="js/jquery.min.js"></script>
       
       <script src="js/comment.js"></script>
+     
+      <script src="js/getVideo.js"></script>
       <script src="js/video.js"></script>
-      <script src="js/submitComment.js"></script>
-      
-      <script src="js/login.js"></script>
-      <script src="js/register.js"></script>
-      
-      <script src="js/downloadIncrease.js"></script>
-      
       
       <script src="js/bootstrap.js"></script>
       <script src="js/jquery.parallax.js"></script> 
@@ -160,7 +130,7 @@
       <script src="js/spectrum.js"></script>
       <script src="js/switcher.js"></script>
       <script src="js/custom.js"></script>
-      <script type="text/javascript" src="js/html5media.min.js"></script>
+
       
        
 </body>

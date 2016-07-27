@@ -74,12 +74,35 @@
                <div class="container">
 					<div style="margin:20px 30px 20px 30px;">
 					
-							
-						<div class="item active" id="ALBUM_ITEM" style="height:500px;margin-bottom:50px;">
-                             
-                             
-                              
+						<!-- 千禧韵婚礼馆 相册 -->
+						<div class="item active" id="ALBUM_ITEM" style="height:500px;float:left;margin-bottom:50px;">
+                     <div style="margin:0 20px;float:left;text-align:center;background-image:url(img/album_background.png)">
+                        <div>
+                           <img src="Media/picture/qxy_1.jpg" style="width:360px;height:300px;"/>
+                        </div> 
+                        <div >
+                           <p id="album1" onclick="javascript:setAlubumID(this)" style="font-size:20px;text-align:center;margin:10px auto 5px auto;">千禧韵婚礼馆</p>
+                           <p style="text-align:center;">照片数:4</p>
+                           <p style="text-align:center;">简介:千禧韵婚礼馆照片</p>
+                        </div>
+                     </div>     
 						</div>
+
+
+                  <!-- 婚礼现场 相册 -->
+                  <div class="item active" id="ALBUM_ITEM" style="height:500px;float:left;margin-bottom:50px;">
+                     <div style="margin:0 20px;float:left;text-align:center;background-image:url(img/album_background.png)">
+                        <div>
+                           <img src="Media/picture/p1.jpg" style="width:360px;height:300px;"/>
+                        </div> 
+                        <div >
+                           <p id="album2" onclick="javascript:setAlubumID(this)" style="font-size:20px;text-align:center;margin:10px auto 5px auto;">婚礼现场</p>
+                           <p style="text-align:center;">照片数:14</p>
+                           <p style="text-align:center;">简介:婚礼现场照片</p>
+                        </div>
+                     </div>     
+                  </div>
+
                   
                   <div class="divider"></div>
                </div>
@@ -97,8 +120,8 @@
       <!-- The Scripts -->
       <script src="js/jquery.min.js"></script>
       <script src="js/comment.js"></script>
-      <script src="js/login.js"></script>
-      <script src="js/register.js"></script>
+
+
       <script src="js/getAlbum.js"></script>
       
       <script src="js/bootstrap.js"></script>
@@ -118,17 +141,6 @@
       <script src="js/spectrum.js"></script>
       <script src="js/switcher.js"></script>
       <script src="js/custom.js"></script>
-      
-
-   <div class="modal fade" id="modellog" tabindex="-1" role="dialog"
-		aria-labelledby="myModallog" aria-hidden="true">
-			
-	</div>
-	<script>
-		   $(function () { $('#myModallog').modal({
-		      keyboard: true
-		   })});
-	</script>
 
 </body>
 </html>

@@ -64,7 +64,7 @@ function head(){
             + '               </span>'
             + '               </a>'
             + '               <ul>'
-            + '                  <li><a href="display-article.html" class="sf-with-ul">文章</a></li>'
+           
             + '                  <li><a href="display-album.html" class="sf-with-ul">相册</a></li>'
             + '                  <li><a href="display-music.html" class="sf-with-ul">音乐</a></li>'
             + '                  <li><a href="display-videoList.html" class="sf-with-ul">视频</a></li>'
@@ -76,9 +76,7 @@ function head(){
             + '            <li>'
             + '               <a id="contact" href="contact.html" class="sf-with-ul"> 联系我们</a>'
             + '            </li>'
-            + '            <li id="ONCLICK" data-toggle="modal" data-target="modellog" onclick style="padding-top:25px;padding-left:15px">'
-            + '            	<span class="icon-user" style="color:white;font-size:30px;"></span>'
-            + '            </li>'
+          
             + '         </ul>'
             + '      </nav>'
             + '      <!-- Menu End --> '
@@ -140,44 +138,44 @@ function foot(){
 	console.log("footer ok!");
 }
 
-function modle(){
-	console.log("log modal start!");
-	var htmlModle='<div class="modal-content" id="LogRegDIV" style="margin:150px auto 50px auto;width:800px;height:400px">'
-			+ '<h1 class="modal-title" style="font-size: 24px;font-weight: 700;text-align:center;color:black;padding-top:15px;margin-bottom:30px;">登录</h1>'
-			+ '	<div style="padding:10px;margin:10px auto 20px auto;">'
-			+ '		<div class="row" style="margin:0 auto 0 auto;padding:0 100px 0 100px;">'
-			+ '			<div class="col-lg-4" style="min-width: 80px;max-width: 90px;padding: 0px;">'
-			+ '				<h1 style="border-bottom: 0px; color: #34495e;font-size:15px;">用户名：</h1>'
-			+ '			</div>'
-			+ '			<div class="col-lg-3" style="padding: 0px;min-width: 299px;max-width: 299px;">'
-			+ '				<input id="userName" type="text" class="login-field" style="height: 33px;">'
-			+ '			</div>'
-			+ '			<div class="col-lg-3" style="margin-top: 5px;">'
-			+ '				<a id="NAMEmessage" style="color: red;visibility:hidden;" class="awarning">*用户名不能为空</a>'
-			+ '			</div>'
-			+ '		</div>'
-			+ '		'
-			+ '		<div class="row" style="margin:0 auto 0 auto;padding:0 100px 0 100px;">'
-			+ '			<div class="col-lg-4" style="min-width: 80px;max-width: 90px;padding: 0px;">'
-			+ '				<h1 style="border-bottom: 0px; color: #34495e;font-size:15px;">密码：</h1>'
-			+ '			</div>'
-			+ '			<div class="col-lg-3" style="padding: 0px;min-width: 299px;max-width: 299px;">'
-			+ '				<input id="password" type="password" class="login-field" style="height: 33px;">'
-			+ '			</div>'
-			+ '			<div class="col-lg-3" style="margin-top: 5px;">'
-			+ '				<a id="PASSWORDmessage" style="color: red;visibility:hidden;" class="awarning">*密码不能为空</a>'
-			+ '			</div>'
-			+ '		</div>'
-			+ '		<div class="row" style="margin:0 auto 0 auto;padding:0 100px 0 100px;">'
-			+ '			<button type="button" class="btn btn-primary" onclick="login()" >登录</button>'
-			+ '			<button type="button" class="btn btn-default" onclick="shiftRegist()">注册</button>'
-			+ '			<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>'
-			+ '		</div>'
-			+ '	</div>'
-			+ '</div>';
-	$("#modellog").html(htmlModle);
-	console.log("log modal ok!");
-}
+// function modle(){
+// 	console.log("log modal start!");
+// 	var htmlModle='<div class="modal-content" id="LogRegDIV" style="margin:150px auto 50px auto;width:800px;height:400px">'
+// 			+ '<h1 class="modal-title" style="font-size: 24px;font-weight: 700;text-align:center;color:black;padding-top:15px;margin-bottom:30px;">登录</h1>'
+// 			+ '	<div style="padding:10px;margin:10px auto 20px auto;">'
+// 			+ '		<div class="row" style="margin:0 auto 0 auto;padding:0 100px 0 100px;">'
+// 			+ '			<div class="col-lg-4" style="min-width: 80px;max-width: 90px;padding: 0px;">'
+// 			+ '				<h1 style="border-bottom: 0px; color: #34495e;font-size:15px;">用户名：</h1>'
+// 			+ '			</div>'
+// 			+ '			<div class="col-lg-3" style="padding: 0px;min-width: 299px;max-width: 299px;">'
+// 			+ '				<input id="userName" type="text" class="login-field" style="height: 33px;">'
+// 			+ '			</div>'
+// 			+ '			<div class="col-lg-3" style="margin-top: 5px;">'
+// 			+ '				<a id="NAMEmessage" style="color: red;visibility:hidden;" class="awarning">*用户名不能为空</a>'
+// 			+ '			</div>'
+// 			+ '		</div>'
+// 			+ '		'
+// 			+ '		<div class="row" style="margin:0 auto 0 auto;padding:0 100px 0 100px;">'
+// 			+ '			<div class="col-lg-4" style="min-width: 80px;max-width: 90px;padding: 0px;">'
+// 			+ '				<h1 style="border-bottom: 0px; color: #34495e;font-size:15px;">密码：</h1>'
+// 			+ '			</div>'
+// 			+ '			<div class="col-lg-3" style="padding: 0px;min-width: 299px;max-width: 299px;">'
+// 			+ '				<input id="password" type="password" class="login-field" style="height: 33px;">'
+// 			+ '			</div>'
+// 			+ '			<div class="col-lg-3" style="margin-top: 5px;">'
+// 			+ '				<a id="PASSWORDmessage" style="color: red;visibility:hidden;" class="awarning">*密码不能为空</a>'
+// 			+ '			</div>'
+// 			+ '		</div>'
+// 			+ '		<div class="row" style="margin:0 auto 0 auto;padding:0 100px 0 100px;">'
+// 			+ '			<button type="button" class="btn btn-primary" onclick="login()" >登录</button>'
+// 			+ '			<button type="button" class="btn btn-default" onclick="shiftRegist()">注册</button>'
+// 			+ '			<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>'
+// 			+ '		</div>'
+// 			+ '	</div>'
+// 			+ '</div>';
+// 	$("#modellog").html(htmlModle);
+// 	console.log("log modal ok!");
+// }
 
 function setCurrent(){
 	var currentPath=window.location.pathname;

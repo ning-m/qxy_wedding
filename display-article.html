@@ -4,7 +4,7 @@
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
    <head>
       <meta charset="utf-8">
-      <title>发布信息</title>
+      <title id="webTitle">文章名</title>
       <meta name="description" content="千禧韵婚礼馆公司网站">
       <meta name="author" content="东南大学软件学院13级本科生">
       
@@ -48,30 +48,29 @@
       <![endif]-->
    
    </head>
-   
-   <body class="home">
+   <body class="blog">
       <div class="wrap">
-          <!-- Header Start -->
+         <!-- Header Start -->
          <header id="header">
             
          </header>
-         <!-- Header End --> 
-         <!-- Content Start -->
-   			
-   		<div id="main">
-            <!-- Title, Breadcrumb Start-->
+         <!-- Header End -->  
+            <!-- Main Content start-->  
+            <div id="main">
+            	<!-- Title, Breadcrumb Start-->
             <div class="breadcrumb-wrapper">
                <div class="container">
                   <div class="row">
                      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
-                        <h2 class="title">发布信息</h2>
+                        <h2 class="title">文章</h2>
                      </div>
                      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
                         <div class="breadcrumbs pull-right">
                            <ul>
                               <li>当前位置:</li>
-                              <li><a href="index.html">首页</a></li>
-                              <li>发布信息</li>
+                              <li><a href="display.html">发布信息</a></li>
+                              <li><a href="display-aarticleList.html">文章</a></li>
+                              <li id="currentAlbumName">文章名</li>
                            </ul>
                         </div>
                      </div>
@@ -79,37 +78,37 @@
                </div>
             </div>
             <!-- Title, Breadcrumb End-->
-            <!-- Main Content start-->
-            <div class="content" style="padding-left:60px;">
-	            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-	                        <h3 class="title" id="block">板块</h3>
-	            </div>
-	            <div class="center major-list-outer">
-					<ul class="major-list">
-						<li class="major-item" id="dx"><a href="display-article.html" target="_blank"><span class="txt-hide front-face"></span><span class="back-face"></span></a></li>
-						<li class="major-item" id="rj"><a href="display-album.html" target="_blank"><span class="txt-hide front-face"></span><span class="back-face"></span></a></li>
-						<li class="major-item" id="jx"><a href="display-music.html" target="_blank"><span class="txt-hide front-face"></span><span class="back-face"></span></a></li>
-						<li class="major-item" id="gdz"><a href="display-videoList.html" target="_blank"><span class="txt-hide front-face"></span><span class="back-face"></span></a></li>
-					</ul>
-				</div>
-				
-				
-	            
-	            
-            </div>
             
+            <div style="background-image:url('img/pic_background.png');background-repeat:no-repeat; background-position-y:bottom;">
+            
+            <div style="margin:0 auto 0 auto;width:70%">
+            <div style="height:5em"></div>
+         <section class="site-header container">
+			<h1 id="articleTitle">文章名</h1>
+			<div>
+				<p id="article-newTime">创建时间：</p>
+				<p id="article-newAdmin">创建人：</p>
+			</div>
+			
+			<iframe src="Media/word/test.htm" style="width:100%;height:900px;background-color:#fff"></iframe>
+		
+		</section>
+            </div>
+            </div>
             <!-- Main Content end-->
          </div>
-   
-   
-   		<!-- Content End -->
-         <!-- Footer Start -->
-        <div id="FooterDIV"></div>
-      </div>
+         	<div style="height:5em"></div>
+         <!-- Content End -->
+         </div>
+         
+	  <!-- Footer Start -->
+      <div id="FooterDIV"></div>
+	</div>
       <!-- Wrap End -->
-     
+
       <!-- The Scripts -->
       <script src="js/jquery.min.js"></script>
+      
       <script src="js/comment.js"></script>
       <script src="js/login.js"></script>
       <script src="js/register.js"></script>
@@ -130,6 +129,16 @@
       <script src="js/spectrum.js"></script>
       <script src="js/switcher.js"></script>
       
-      <script type="text/javascript" src="js/main.js"></script>
+
+   <div class="modal fade" id="modellog" tabindex="-1" role="dialog"
+		aria-labelledby="myModallog" aria-hidden="true">
+			
+	</div>
+	<script>
+		   $(function () { $('#myModallog').modal({
+		      keyboard: true
+		   })});
+	</script>
+
 </body>
-   </html>
+</html>

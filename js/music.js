@@ -1,6 +1,12 @@
 var currentMediaId;
 var currentMediaPath;
 function getMusicInfo(){
+
+
+
+
+
+
 	$.ajax({
 		url : "/qxy_wedding/musicInfo",
 				contentType : "text/json;charset=utf-8",
@@ -306,4 +312,3 @@ function getMediaComment(musicId){
 	});
 }
 
-$(document).ready(getMusicInfo);
