@@ -1,5 +1,4 @@
-var User_uid = null;
-var User_uname = null;
+
 var tmp=null;
 function head(){
 	console.log("head start!");
@@ -186,8 +185,10 @@ function setCurrent(){
 	}
 	switch (currentPath){
 	case "/qxy_wedding/index.html":
+      case "/qxy_wedding/":
 		document.getElementById("homepage").id="current";
 		tmp="homepage";
+            console.log(currentPath+"为当前页面");
 		break;
 	case "/qxy_wedding/company-homepage.html":
 	case "/qxy_wedding/company-bussiness.html":
