@@ -62,7 +62,7 @@ $(document).ready(function(){
 				c = this.currentTime;
 				curM = Math.floor(c/60);
 				curS = Math.round(c - curM*60);
-				$('#current').text(curM + ':' + curS);
+				$('#currentT').text(curM + ':' + curS);
 				$('#t_progress').slider({
 						max: d,
 						min: 0,

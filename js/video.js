@@ -21,19 +21,15 @@ function getVideoInfo(){
 	console.log(VIDEO_ID);
 
 	console.log("/qxy_wedding/videoInfo?videoId="+VIDEO_ID);
-
+	console.log("start loading");
 	if (VIDEO_ID == "v001"){
-		$("#videoName").html(videoName);
+		console.log("start loading");
+		$("#videoName").html("我的好兄弟");
 		$("#videoName_TITLE").html("我的好兄弟");
 		$("#videoNameList").html("我的好兄弟");
+
 		$("#videoAuthor").html("解发权");
-		$("#videoTime").html("00:03:46");
-		document.getElementById("videoName").innerHtml="我的好兄弟";
-		document.getElementById("videoAuthor").innerHtml=videoAuthor;
-		document.getElementById("videoTime").innerHtml=videoTime;
-		document.getElementById("videoVIDEO").poster="Media/videoCover/"+videoCover;
-						
-		document.getElementById("downloadLink").href="Media/video/"+ videoPath;
+		$("#videoTime").html("2016/6/10");
 
 		var htmlVideo = '<source id="video1" src="Media/video/我的好兄弟.mp4" media="only screen and (min-device-width: 568px)"></source>'
 					+ ' <source id="video2" src="Media/video/我的好兄弟.mp4" media="only screen and (max-device-width: 568px)"></source>'
@@ -41,22 +37,22 @@ function getVideoInfo(){
 		$("#videoVIDEO").html(htmlVideo);
 	}
 	else if (VIDEO_ID == "v002"){
-		$("#videoName").html(videoName);
-						$("#videoName_TITLE").html("巴中千禧韵婚礼馆");
-						$("#videoNameList").html("巴中千禧韵婚礼馆");
-						$("#videoAuthor").html("解发权");
-						$("#videoTime").html("00:04:23");
+		$("#videoName").html("巴中千禧韵婚礼馆");
+		$("#videoName_TITLE").html("巴中千禧韵婚礼馆");
+		$("#videoNameList").html("巴中千禧韵婚礼馆");
+		$("#videoAuthor").html("解发权");
+		$("#videoTime").html("2016/6/14");
 		var htmlVideo = '<source id="video1" src="Media/video/结婚啦-巴中千禧韵婚礼馆.mp4" media="only screen and (min-device-width: 568px)"></source>'
 					+ ' <source id="video2" src="Media/video/结婚啦-巴中千禧韵婚礼馆.mp4" media="only screen and (max-device-width: 568px)"></source>'
 					+ ' <source id="video3" src="Media/video/结婚啦-巴中千禧韵婚礼馆.mp4" media="only screen and (max-device-heigth: 1000px)"></source>';
 		$("#videoVIDEO").html(htmlVideo);
 	}
 	else if (VIDEO_ID == "v003"){
-		$("#videoName").html(videoName);
-						$("#videoName_TITLE").html("主持");
-						$("#videoNameList").html("主持");
-						$("#videoAuthor").html("解发权");
-						$("#videoTime").html("00:09:49");
+		$("#videoName").html("巴中千禧韵婚礼馆");
+		$("#videoName_TITLE").html("主持");
+		$("#videoNameList").html("主持");
+		$("#videoAuthor").html("解发权");
+		$("#videoTime").html("2016/6/20");
 		var htmlVideo = '<source id="video1" src="Media/video/主持.mp4" media="only screen and (min-device-width: 568px)"></source>'
 					+ ' <source id="video2" src="Media/video/主持.mp4" media="only screen and (max-device-width: 568px)"></source>'
 					+ ' <source id="video3" src="Media/video/主持.mp4" media="only screen and (max-device-heigth: 1000px)"></source>';
