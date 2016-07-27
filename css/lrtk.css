@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* 展示区首页样式 */
+/* 效果CSS开始 */
+.center{display:block;width:960px;margin:30px auto;position:relative}
+.major-list-outer{height:190px; overflow:hidden}
+.major-list{margin-right:-32px;margin-bottom:-30px;*margin-bottom:0px}
+.major-list li{width:216px;height:169px;margin-right:32px;margin-bottom:32px;float:left;position:relative}
+.major-list li a, .major-list li a span{width:100%;height:100%;display:block;position:absolute;left:0;top:0}
+.front-face{z-index:2;background:url(../img/majors.png) no-repeat 0 0}
+.back-face{z-index:1;background:url(../img/majors.png) no-repeat 0 0}
+.major-list li a{overflow:hidden}
+.major-list li:hover a .back-face{z-index:3;}
+#dx .front-face, #dx .back-face{background-position:0 0}
+#rj .front-face, #rj .back-face{background-position:-217px 0}
+#jx .front-face, #jx .back-face{background-position:-434px 0}
+#gdz .front-face, #gdz .back-face{background-position:-651px 0}
+
+.btm{ margin:30px auto}
+.btm p{ font:normal 12px/24px 'Microsoft YaHei'; text-align:center}
+/* 效果CSS结束 */

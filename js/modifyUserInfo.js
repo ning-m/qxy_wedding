@@ -1,0 +1,4 @@
+
+function modifyModal(){
+	$("#modelModify").modal();
+}

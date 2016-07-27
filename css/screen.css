@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* zgodności */
+a, button {
+  outline: none !important; }
+
+* {
+  -webkit-user-select: element;
+  -moz-user-select: element;
+  -ms-user-select: element; }
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+.sr-only {
+  color: transparent; }
+
+textarea,
+button,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"] {
+  -webkit-appearance: none !important; }
+
+/* Safari Opera  */
+/* galaxy-tab-2 */
+/* ipad all generations */
+.visible-touch-deviced {
+  display: none !important; }
+
+.touch-device .visible-touch-device {
+  display: block !important; }
+.touch-device .container .hidden-touch-device {
+  display: none !important; }
+
+

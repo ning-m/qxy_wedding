@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+   <head>
+      <meta charset="utf-8">
+      <title>音乐盒</title>
+      <meta name="description" content="千禧韵婚礼馆公司网站">
+      <meta name="author" content="东南大学软件学院13级本科生">
+      
+      <!-- Mobile Metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- Library CSS -->
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css">
+      <link rel="stylesheet" href="css/animations.css" media="screen">
+      <link rel="stylesheet" href="css/superfish.css" media="screen">
+      <link rel="stylesheet" href="css/revolution-slider/css/settings.css" media="screen">
+      <link rel="stylesheet" href="css/prettyPhoto.css" media="screen">
+      <!-- 音乐播放器 -->
+      <link rel="stylesheet" type="text/css" href="css/tplayer.css" />
+		<link rel="stylesheet" type="text/css" href="Plugins/FontAwesome4.1/css/font-awesome.min.css" />
+      <!-- Theme CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Skin -->
+      <link rel="stylesheet" href="css/colors/blue.css" id="colors">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/theme-responsive.css">
+      <!-- Switcher CSS -->
+     <link href="css/switcher.css" rel="stylesheet">
+     <link href="css/spectrum.css" rel="stylesheet">
+     
+	     <!--  圆角矩形  -->
+     <style type="text/css">
+     .send {
+position:relative;
+width:150px;
+padding:5px 5px;
+background:rgb(100,100,100);
+color:rgb(255,255,255);
+border-radius:5px; /* 圆角 */
+margin:-50px auto 0 100px;
+}
+.send .arrow {
+position:absolute;
+top:5px;
+right:150px; /* 圆角的位置需要细心调试哦 */
+width:0;
+height:0;
+font-size:0;
+border:solid 8px;
+border-color:#FFF rgb(100,100,100) #FFF #FFF;
+}
+
+</style>
+      <!-- 图标 -->
+      <link rel="shortcut icon" href="img/ico/wedding.ico">
+      <link rel="apple-touch-icon" href="img/ico/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-touch-icon-72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-touch-icon-114.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-touch-icon-144.png">
+      <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+      <!--[if IE]>
+      <link rel="stylesheet" href="css/ie.css">
+      <![endif]-->
+   </head>
+
+
+
+<body class="keBody">
+      <div class="wrap">
+         <!-- Header Start -->
+         <header id="header">
+            
+         </header>
+         <!-- Header End --> 
+         <div id="main" > 
+         <!-- Title, Breadcrumb Start-->
+            <div class="breadcrumb-wrapper">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+                        <h2 class="title">音乐盒</h2>
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+                        <div class="breadcrumbs pull-right">
+                           <ul>
+                              <li>当前位置:</li>
+                              <li><a href="display.html">发布信息</a></li>
+                              <li>音乐盒</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Title, Breadcrumb End-->
+         	<div id="musicCommentInfo" style="width:430px;height:675px;padding-top:100px;padding-left:50px;padding-right:20px;overflow:auto; float:right;background-image:url('img/comment_background.png')">
+				<h1 style="color:rgb(100,100,100);text-align:center;">暂无评论</h1>
+
+			</div>
+			<input id="MediaID" style="visibility:hidden" value=""/>
+			<div style="padding-top:100px;padding-left:50px;padding-right:20px;position:absolute;top:670px;right:20px;">
+				<span style="color:rgb(150,150,150)">｡◕ ◡ ◕｡评论一下吧~</span>
+				<input type="text" id="subComment" value="" style="width:200px"/>
+				<input type="button" onclick="submitComment('music')" value="发送"/>
+			</div>
+<!--效果html开始-->
+<div class="myplayer" style="background-image:url('img/music_background.png')">
+<div id="t_wrapper">
+  <div id="t_cover"> <img src="images/music/logo.png"> </div>
+  <div id="t_top">
+    <div id="t_title_info"> <span class="artist"></span> <span class="title"></span> </div>
+    	<span class=" icon-download-alt" style="float:right;top:-20px;"><a href="" id="downloadLink" target="_blank" >下载</a></span>
+  </div>
+  <div id="t_middle">
+    <div id="play"></div>
+    <div id="pause" class="hidden"> </div>
+    <div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="t_progress">
+      <div id="trackInfo">
+        <div id="error"> </div>
+        <div id="timeCurrent">0:00</div>
+        <div id="duration">0:00</div>
+      </div>
+      <div style="width: 0%;" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+      <span style="left: 0%;" class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span> </div>
+    <span id="prev"></span> <span id="next"></span> </div>
+  <div id="t_bottom">
+    <div id="range">
+      <div id="val"></div>
+      <div id="vol"></div>
+      <div id="rangeVal"></div>
+    </div>
+    <div id="t_pls_show" class="noselectpls"></div>
+  </div>
+</div>
+<div id="playlist">
+	
+  <ul id="MUSIC_playList">
+  </ul>
+</div>
+</div>
+<!--效果html结束-->
+</div>
+
+	<!-- Footer Start -->
+  		<div id="FooterDIV"></div>
+      </div>
+      <!-- Wrap End -->
+     
+      <!-- The Scripts -->
+      <script src="js/jquery.min.js"></script>
+      
+       <script src="js/jquery.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/tPlayer.js"></script>
+		
+		<script src="js/music.js"></script>
+		
+      <script src="js/comment.js"></script>
+      <script src="js/login.js"></script>
+      <script src="js/register.js"></script>
+      <script src="js/submitComment.js"></script>
+		
+      
+      <script src="js/bootstrap.js"></script>
+      <script src="js/jquery.parallax.js"></script> 
+      <script src="js/modernizr-2.6.2.min.js"></script> 
+      <script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+      <script src="js/jquery.nivo.slider.pack.js"></script>
+      <script src="js/jquery.prettyPhoto.js"></script>
+      <script src="js/superfish.js"></script>
+      <script src="js/tweetMachine.js"></script>
+      <script src="js/tytabs.js"></script>
+	  <script src="js/jquery.gmap.min.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+      <script src="js/jflickrfeed.js"></script>
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <script src="js/waypoints.min.js"></script>
+      <script src="js/spectrum.js"></script>
+      <script src="js/switcher.js"></script>
+      <script src="js/custom.js"></script>
+
+
+	
+</body>
+</html>
