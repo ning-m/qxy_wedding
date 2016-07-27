@@ -58,6 +58,28 @@ function getVideoInfo(){
 					+ ' <source id="video3" src="Media/video/主持.mp4" media="only screen and (max-device-heigth: 1000px)"></source>';
 		$("#videoVIDEO").html(htmlVideo);
 	}
+	else if (VIDEO_ID == "v004"){
+		$("#videoName").html("关于你的歌");
+		$("#videoName_TITLE").html("关于你的歌");
+		$("#videoNameList").html("关于你的歌");
+		$("#videoAuthor").html("解发权");
+		$("#videoTime").html("2016/6/20");
+		var htmlVideo = '<source id="video1" src="Media/video/关于你的歌 全.mp4" media="only screen and (min-device-width: 568px)"></source>'
+					+ ' <source id="video2" src="Media/video/关于你的歌 全.mp4" media="only screen and (max-device-width: 568px)"></source>'
+					+ ' <source id="video3" src="Media/video/关于你的歌 全.mp4" media="only screen and (max-device-heigth: 1000px)"></source>';
+		$("#videoVIDEO").html(htmlVideo);
+	}
+	else if (VIDEO_ID == "v005"){
+		$("#videoName").html("现场：我们的歌 & 爱的就是你");
+		$("#videoName_TITLE").html("现场：我们的歌 & 爱的就是你");
+		$("#videoNameList").html("现场：我们的歌 & 爱的就是你");
+		$("#videoAuthor").html("解发权");
+		$("#videoTime").html("2016/6/20");
+		var htmlVideo = '<source id="video1" src="Media/video/我们的歌 + 爱的就是你.mp4" media="only screen and (min-device-width: 568px)"></source>'
+					+ ' <source id="video2" src="Media/video/我们的歌 + 爱的就是你.mp4" media="only screen and (max-device-width: 568px)"></source>'
+					+ ' <source id="video3" src="Media/video/我们的歌 + 爱的就是你.mp4" media="only screen and (max-device-heigth: 1000px)"></source>';
+		$("#videoVIDEO").html(htmlVideo);
+	}
 	else{
 		alert("加载出错，抱歉QAQ");
 	}
