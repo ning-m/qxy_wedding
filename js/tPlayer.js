@@ -27,7 +27,7 @@ function initAudio(elem) {
 		
         $('.title').text(' - ' + title);
         $('.artist').text(artist);
-        $('#t_cover').html('<img src="Images/' + cover+'">');
+        $('#t_cover').html('<img src="images/' + cover+'">');
 		}
 		
 $(document).ready(function(){
